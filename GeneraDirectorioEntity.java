@@ -337,7 +337,7 @@ public class GeneraDirectorioEntity {
                         System.out.println("@ManyToOne(fetch = FetchType.LAZY)");
                         out.println("@ManyToOne(fetch = FetchType.LAZY)");
                         System.out.println("@JoinColumn(name = " + relaciones.getString(3) + ", nullable = false)");
-                        out.println("@JoinColumn(name = " + relaciones.getString(3) + ", nullable = false)");
+                        out.println("@JoinColumn(name = \"" + relaciones.getString(3) + "\", nullable = false)");
 
                         System.out
                                 .println("private " + utilitarios.generaMayusculaInicial(camelCaseRelacionesTabla) + " "
